@@ -1,0 +1,1 @@
+This is a project for calculating a GPA using JavaScript
