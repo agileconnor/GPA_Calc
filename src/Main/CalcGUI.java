@@ -76,8 +76,18 @@ public class CalcGUI extends javax.swing.JFrame {
         GPALabel.setText("NC");
 
         jButton1.setText("Calculate");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Clear");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 8)); // NOI18N
         jLabel6.setText("Created by Connor Belanger for OIAIS NJHS");
@@ -184,6 +194,29 @@ public class CalcGUI extends javax.swing.JFrame {
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        GPALabel.setText("NC");
+        jComboBox1.setSelectedIndex(0);
+        jComboBox2.setSelectedIndex(0);
+        jComboBox3.setSelectedIndex(0);
+        jComboBox4.setSelectedIndex(0);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        int Box1 = jComboBox1.getSelectedIndex();
+        int Box2 = jComboBox2.getSelectedIndex();
+        int Box3 = jComboBox3.getSelectedIndex();
+        int Box4 = jComboBox4.getSelectedIndex();
+        float Grade1 = GradeConvert.Convert(Box1);
+        float Grade2 = GradeConvert.Convert(Box2);
+        float Grade3 = GradeConvert.Convert(Box3);
+        float Grade4 = GradeConvert.Convert(Box4);
+        float total = Grade1 + Grade2 + Grade3 + Grade4;
+        float GPA = total/4;
+        String GPAtxt = Float.toString(GPA);
+        GPALabel.setText(GPAtxt);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
