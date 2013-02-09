@@ -4,6 +4,7 @@
  */
 package Main;
 
+
 /**
  *
  * @author Connor
@@ -15,8 +16,8 @@ public class CalcGUI extends javax.swing.JFrame {
      */
     public CalcGUI() {
         initComponents();
+  
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -90,7 +91,7 @@ public class CalcGUI extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 8)); // NOI18N
-        jLabel6.setText("Created by Connor Belanger for OIAIS NJHS");
+        jLabel6.setText("Created by Connor Belanger for OIAIS NJHS @2013");
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel9.setText("OIAIS");
