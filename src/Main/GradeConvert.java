@@ -10,6 +10,11 @@ package Main;
  */
 public class GradeConvert {
     
+    /**
+     *
+     * @param GradeIn
+     * @return GPAOut
+     */
     public static float Convert(int GradeIn) {
         float GPAOut = 0;
         if (GradeIn == 1 || GradeIn == 2) {
@@ -47,4 +52,11 @@ public class GradeConvert {
         }
         return GPAOut;
     }
+  public static boolean Analyze(int indexNum) {
+      boolean isGrade = true;
+      if (indexNum == 0) {
+          isGrade = false;
+      }
+      return isGrade;
+  }
 }
