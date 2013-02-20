@@ -52,11 +52,35 @@ public class GradeConvert {
         }
         return GPAOut;
     }
-  public static boolean Analyze(int indexNum) {
-      boolean isGrade = true;
-      if (indexNum == 0) {
-          isGrade = false;
+    public static int AnalyzeNum(int indexNum1, int indexNum2, int indexNum3, int indexNum4, int indexNum5, int indexNum6, int indexNum7, int indexNum8, int indexNum9) {
+      int GradeCount = 9;
+      if (indexNum1 == 0) {
+          GradeCount = GradeCount - 1;
       }
-      return isGrade;
+      if (indexNum2 == 0) {
+          GradeCount = GradeCount - 1;
+      }
+      if (indexNum3 == 0) {
+          GradeCount = GradeCount - 1;
+      }
+      if (indexNum4 == 0) {
+          GradeCount = GradeCount - 1;
+      }
+      if (indexNum5 == 0) {
+          GradeCount = GradeCount - 1;
+      }
+      if (indexNum6 == 0) {
+          GradeCount = GradeCount - 1;
+      }
+      if (indexNum7 == 0) {
+          GradeCount = GradeCount - 1;
+      }
+      if (indexNum8 == 0) {
+          GradeCount = GradeCount - 1;
+      }
+      if (indexNum9 == 0) {
+          GradeCount = GradeCount - 1;
+      }
+      return GradeCount;
   }
 }
